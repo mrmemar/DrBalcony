@@ -228,8 +228,8 @@
                                         <p class="step-title">Comment</p>
                                     </div>
                                     <div class="step ">
-                                        <div class="step-icon-wrap">
-                                            <div class="step-icon arrow rotate-180">
+                                        <div class="step-icon-wrap ">
+                                            <div class="step-icon arrow rotate-180 ">
                                                 <img src="./assets/images/icons/arrow.svg">
                                             </div>
                                         </div>
@@ -248,7 +248,7 @@
                                             for Surface</p>
                                         <div class="flex gap-[11px] w-full mt-[26px]">
                                             <label for="dropzone-file"
-                                                class=" size-[119px] rounded flex items-cneter justify-center relative border border-dashed border-active">
+                                                class="cursor-pointer size-[119px] rounded flex items-cneter justify-center relative border border-dashed border-active">
                                                 <div class="flex flex-col items-center justify-center gap-1 pt-5 pb-6">
                                                     <img src="./assets/images/icons/camera.svg" alt="icon">
                                                     <p class="font-semibold font-font-banner text-xs text-active">
@@ -345,13 +345,13 @@
                 @apply z-10 relative m-auto size-7 bg-border-color text-[#4B4B4B] rounded-full flex items-center justify-center text-xs font-semibold	;
             }
             .step .arrow{
-                @apply z-10 relative m-auto size-[37px] bg-white rounded-full border border-active;
+                @apply z-10 relative m-auto size-[37px] bg-white rounded-full border border-active cursor-pointer;
             }
             .step .arrow:not(.disabled) img{
                 @apply filter-active;
             }
             .step .arrow.disabled{
-                @apply border border-border-color;
+                @apply border border-border-color cursor-default;
             }
             .step.active .step-icon{
                 @apply bg-black text-white;
@@ -363,7 +363,7 @@
                 @apply w-5;
             }
             .menu-item{
-                @apply cursor-pointer relative rounded-xl h-[45px] flex items-center;
+                @apply cursor-pointer relative rounded-xl h-[45px] flex items-center transition-all hover:text-active;
             }
             .menu-item .text{
                 @apply font-medium text-sm ml-3;
@@ -399,7 +399,7 @@
                 @apply text-normal-text;
             }
             .tab-header .tab-header-item{
-                @apply px-[21px] pb-[7px] border-b font-normal text-normal-text;
+                @apply px-[21px] pb-[7px] border-b font-normal text-normal-text  transition-all hover:text-active;
             }
             .tab-header .tab-header-item.active{
                 @apply font-medium text-active border-b-[1.5px] border-active;
