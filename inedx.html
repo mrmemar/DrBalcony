@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrBalcony</title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-base-background font-font-text ">
+    <div class="page-wrapper flex">
+        <div
+            class="side hidden md:block w-[238px] bg-white relative border border-border-color basis-auto box-content shrink-0">
+
+            <div class="logo w-[131px] h-[29px] mt-8 ml-[18px]">
+                <img src="./assets/images/logo.png" class="w-full h-full object-cover" alt="logo">
+            </div>
+            <div class="menu-wrapper m-auto mt-[84px] w-[204px]">
+                <ul class="menu flex flex-col gap-2">
+                    <li class="menu-item active">
+                        <span class="icon ml-4">
+                            <img src="./assets/images/icons/folder.svg">
+                        </span>
+                        <span class="text ">Projects</span>
+                    </li>
+                    <li class="menu-item has-child ">
+                        <span class="icon ml-4">
+                            <img src="./assets/images/icons/dollar-square.svg">
+                        </span>
+                        <span class="text ">Financial</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="icon ml-4">
+                            <img src="./assets/images/icons/note-text.svg">
+                        </span>
+                        <span class="text ">Demands</span>
+                    </li>
+                    <li class="menu-item">
+                        <span class="icon ml-4">
+                            <img src="./assets/images/icons/calendar.svg">
+                        </span>
+                        <span class="text ">Schedule</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="toggle-side h-8 absolute top-[31px] right-0 bg-box items-center flex rounded-l-[10px] pl-0.5">
+                <button type="button">
+                    <img class="icon-toggle-side" class="size-[17.23px]" src="./assets/images/icons/chevron-left.svg">
+                </button>
+            </div>
+        </div>
+
+        <div class="main-wrapper grow basis-0">
+            <div class="header-wrapper px-7 pt-[34px] w-full bg-base-element border border-border-color">
+                <div class="flex justify-between">
+                    <div class="page-title">
+                        <div class="title flex item-center gap-2 size-[22px]">
+                            <img src="./assets/images/icons/folder.svg" alt="icon">
+                            <h2 class="title text-title-text text-lg font-bold font-font-title content-center">Brooklyn
+                            </h2>
+                        </div>
+                        <div class="back-link text-normal-text text-xs pl-[30px] mt-[2px]">
+                            <a href="#">Back to: <span class="text-active">projects</span></a>
+                        </div>
+                    </div>
+                    <div class="actions-wrapper flex gap-3 relative -top-3">
+                        <button class="action-button py-2.5 pl-3 pr-[18px]" type="button">Building list</button>
+                        <button class="action-button py-2.5 pl-3 pr-[18px]" type="button">EEE list</button>
+                    </div>
+                </div>
+                <div class="detail-header mt-[35px] mb-[25px]">
+                    <ul class="detail-list flex flex-wrap gap-[18px] items-center">
+                        <li class="detail-item">
+                            <img src="./assets/images/icons/location.svg" alt="icon" class="icon-item-list size-[18px]">
+                            <p class="title-detail-item">Location:</p>
+                            <p class="value-detail-item">Brooklyn, NY, USA</p>
+                        </li>
+                        <li class="divider">|</li>
+                        <li class="detail-item">
+                            <img src="./assets/images/icons/call-calling.svg" alt="icon"
+                                class="icon-item-list size-[18px]">
+                            <p class="title-detail-item">Manager number:</p>
+                            <p class="value-detail-item">(888) 546 7564</p>
+                        </li>
+                        <li class="divider">|</li>
+                        <li class="detail-item">
+                            <img src="./assets/images/icons/calendar.svg" alt="icon" class="icon-item-list size-[18px]">
+                            <p class="title-detail-item">Inspection date:</p>
+                            <p class="value-detail-item">January 22, 2024 05:00:00</p>
+                        </li>
+                        <li class="divider">|</li>
+                        <li class="detail-item">
+                            <p class="title-detail-item">Gate code:</p>
+                            <p class="value-detail-item">N/A</p>
+                        </li>
+                        <li class="detail-item">
+                            <img src="./assets/images/icons/calendar.svg" alt="icon" class="icon-item-list size-[18px]">
+                            <p class="title-detail-item">Create date:</p>
+                            <p class="value-detail-item">January 22, 2024 05:00:00</p>
+                        </li>
+                        <li class="divider">|</li>
+                        <li class="detail-item">
+                            <img src="./assets/images/icons/calendar.svg" alt="icon" class="icon-item-list size-[18px]">
+                            <p class="title-detail-item">Assigne date:</p>
+                            <p class="value-detail-item">January 22, 2024 05:00:00</p>
+                        </li>
+                        <li class="divider">|</li>
+                        <li class="detail-item">
+                            <img src="./assets/images/icons/map.svg" alt="icon" class="icon-item-list size-[18px]">
+                            <p class="title-detail-item ">
+                                <a class="text-link-text" href="#">View on the map</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-header m-7 flex justify-between items-center bg-white px-7 py-4 rounded-[10px]">
+                <div class="content-header-description text-title-text text-xs md:text-sm font-semibold">
+                    <p>
+                        Brooklyn - EEE walkway
+                        <span class="font-medium"> - 100 | Floor 4 | north | Material: exposed wood | Railing:
+                            enclosed wood</span>
+                    </p>
+                </div>
+                <div class="content-header-action shrink-0">
+                    <button class="action-button flex gap-2.5 items-center p-2.5" type="button">
+                        <i><img src="./assets/images/icons/edit.svg" alt="icon"></i>
+                        <span>Edit EEE</span>
+                    </button>
+                </div>
+            </div>
+            <div class="content-wrapper px-7">
+                <div class="content-body rounded-[10px] bg-white">
+                    <h5 class="header-form text-title-text font-bold text-xl pl-[30px] pt-[25px] font-font-title">Manage
+                        EEE</h5>
+                    <div class="form-wrapper">
+                        <div class="tab-header">
+                            <div class="">
+                                <ul class="flex my-[29px] ml-[30px] ">
+                                    <li class="tab-header-item active">
+                                        <a href="#" class="">Surface</a>
+                                    </li>
+                                    <li class="tab-header-item">
+                                        <a href="#" class="">Railing</a>
+                                    </li>
+                                    <li class="tab-header-item">
+                                        <a href="#" class="">Waterproofing</a>
+                                    </li>
+                                    <li class="tab-header-item">
+                                        <a href="#" class="">Woodframe</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="stepper-header mx-5 mb-[65px]">
+                                <ol class="flex justify-between	items-center">
+
+                                    <div class="step ">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon arrow disabled">
+                                                <img src="./assets/images/icons/arrow.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step active ">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon">
+                                                1
+                                            </div>
+                                        </div>
+                                        <p class="step-title">Photos for Surface</p>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon">
+                                                2
+                                            </div>
+                                        </div>
+                                        <p class="step-title">Cracks or splits</p>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon">
+                                                3
+                                            </div>
+                                        </div>
+                                        <p class="step-title">Fading and discoloration</p>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon">
+                                                4
+                                            </div>
+                                        </div>
+                                        <p class="step-title">Peeling</p>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon">
+                                                5
+                                            </div>
+                                        </div>
+                                        <p class="step-title">wood</p>
+                                    </div>
+                                    <div class="step ">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon">
+                                                6
+                                            </div>
+                                        </div>
+                                        <p class="step-title">Rot and Decay</p>
+                                    </div>
+                                    <div class="step ">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon">
+                                                7
+                                            </div>
+                                        </div>
+                                        <p class="step-title">Comment</p>
+                                    </div>
+                                    <div class="step ">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon arrow rotate-180">
+                                                <img src="./assets/images/icons/arrow.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </ol>
+                            </div>
+
+                            <div class="stepper-content">
+                                <div class="stepper-body px-6">
+                                    <h5 class="text-xl	font-bold font-font-title">Upload Photo</h5>
+                                    <div class="upload-wrapper mx-[6px]  mb-[146.5px]">
+                                        <p class="description-step text-normal-text font-medium mt-[13px] text-sm	">
+                                            Upload
+                                            General photos
+                                            for Surface</p>
+                                        <div class="flex gap-[11px] w-full mt-[26px]">
+                                            <label for="dropzone-file"
+                                                class=" size-[119px] rounded flex items-cneter justify-center relative border border-dashed border-active">
+                                                <div class="flex flex-col items-center justify-center gap-1 pt-5 pb-6">
+                                                    <img src="./assets/images/icons/camera.svg" alt="icon">
+                                                    <p class="font-semibold font-font-banner text-xs text-active">
+                                                        Add photo
+                                                    </p>
+                                                </div>
+                                                <input id="dropzone-file" type="file" class="hidden" />
+                                            </label>
+                                            <label
+                                                class="group size-[119px] rounded flex items-cneter justify-center bg-box relative ">
+                                                <img src="./assets/images/icons/close.svg"
+                                                    class="hidden group-hover:block size-5 bg-title-text text-white rounded-full absolute right-[-10px] top-[-8px] border-2 border-white cursor-pointer" />
+                                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                                    <img src="./assets/images/icons/Image.svg" alt="icon">
+                                                </div>
+                                            </label>
+                                            <label
+                                                class="group size-[119px] rounded flex items-cneter justify-center bg-box relative ">
+                                                <img src="./assets/images/icons/close.svg"
+                                                    class="hidden group-hover:block size-5 bg-title-text text-white rounded-full absolute right-[-10px] top-[-8px] border-2 border-white cursor-pointer" />
+                                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                                    <img src="./assets/images/icons/Image.svg" alt="icon">
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stepper-footer flex justify-between items-center border-t px-6">
+                                    <div>
+                                        <button
+                                            class="text-white bg-active px-[19px] py-[14.5px] rounded-xl my-[19px] text-sm"
+                                            type="button">
+                                            Save and continue
+                                        </button>
+                                    </div>
+                                    <div class="flex divide-x *:px-4">
+                                        <button class="disabled text-[#B0B0B0]" type="button">Back</button>
+                                        <button class="text-active" type="button">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'font-title': 'Space Grotesk',
+                        'font-text': 'Poppins',
+                        'font-banner': 'Manrope'
+                    },
+                    fontSize: {
+                        xxs: '10px'
+                    },
+                    colors: {
+                        'base-background': '#F6F7FA',
+                        'base-element': '#FFFFFF',
+                        'border-color': '#E2E2E2',
+                        'active': '#FF783E',
+                        'normal-text': '#878787',
+                        'title-text': '#292A2B',
+                        'link-text': '#1F64EA',
+                        'box': '#EEEEEE'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .step{
+                @apply relative w-full text-center relative	;
+            }
+            .step-icon-wrap {
+                @apply relative;
+            }
+            .step-icon-wrap::after {
+                @apply bg-border-color absolute w-1/2 h-1 top-1/2 z-0 right-3/4 rounded-3xl content-[''] transform -translate-y-1/2 translate-x-0;
+            }
+            .step:first-child .step-icon-wrap:after{
+                content: none;
+            }
+            .step.active .step-icon-wrap::after,.step.active +.step .step-icon-wrap::after{
+                @apply filter-active;
+            }
+            .step .step-icon{
+                @apply z-10 relative m-auto size-7 bg-border-color text-[#4B4B4B] rounded-full flex items-center justify-center text-xs font-semibold	;
+            }
+            .step .arrow{
+                @apply z-10 relative m-auto size-[37px] bg-white rounded-full border border-active;
+            }
+            .step .arrow:not(.disabled) img{
+                @apply filter-active;
+            }
+            .step .arrow.disabled{
+                @apply border border-border-color;
+            }
+            .step.active .step-icon{
+                @apply bg-black text-white;
+            }
+            .step .step-title{
+                @apply px-1 text-xxs md:text-xs absolute font-normal leading-[18px] m-auto text-center mt-[3px] left-0 w-full;
+            }
+            .icon {
+                @apply w-5;
+            }
+            .menu-item{
+                @apply cursor-pointer relative rounded-xl h-[45px] flex items-center;
+            }
+            .menu-item .text{
+                @apply font-medium text-sm ml-3;
+            }
+            .menu-item.has-child {
+                @apply before:content-[url("./assets/images/icons/u_angle-up.svg")] before:size-6 before:absolute before:right-1;
+            }
+            .menu-item.active {
+                @apply bg-[#FFF2ED] text-active after:content-[""] after:absolute after:right-[6px] after:h-6 after:border after:rounded after:border-active;
+            }
+            .menu-item.active .icon{
+                @apply filter-active;
+            }
+            .filter-active {
+                filter: invert(53%) sepia(55%) saturate(920%) hue-rotate(332deg) brightness(101%) contrast(101%);
+            }
+            .action-button {
+                @apply rounded-[10px] border border-border-color bg-base-element text-normal-text font-medium text-sm hover:text-active hover:border-active transition-all;
+            }
+            .action-button:hover img {
+                @apply filter-active transition-all;
+            }
+            .detail-item {
+                @apply flex gap-2 *:text-xs *:md:text-sm;
+            } 
+            .title-detail-item{
+                @apply text-normal-text font-normal;
+            }
+            .value-detail-item{
+                @apply text-title-text font-medium;
+            }
+            .divider{
+                @apply text-normal-text;
+            }
+            .tab-header .tab-header-item{
+                @apply px-[21px] pb-[7px] border-b font-normal text-normal-text;
+            }
+            .tab-header .tab-header-item.active{
+                @apply font-medium text-active border-b-[1.5px] border-active;
+            }
+        }   
+    </style>
+</body>
+
+</html>
